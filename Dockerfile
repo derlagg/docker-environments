@@ -2,6 +2,8 @@ FROM ubuntu:latest
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
+RUN mkdir usr/local/nvm
+
 ENV NVM_DIR /usr/local/nvm
 ENV NODE_VERSION 10.15.3
 
