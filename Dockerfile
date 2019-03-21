@@ -26,4 +26,12 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 RUN apt-get install -y openssh-server
 
+RUN node -v
+RUN nvm -v
+
+RUN mkdir ~/.ssh
+RUN chmod 0700 .ssh
+RUN touch known_hosts
 RUN ssh-keyscan 40.76.53.2 >> ~/.ssh/known_hosts
+
+ENTRYPOINT ["/bin/bash"]
