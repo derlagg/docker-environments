@@ -37,5 +37,4 @@ RUN chmod 0700 ~/.ssh
 RUN touch known_hosts
 RUN ssh-keyscan 40.76.53.2 >> ~/.ssh/known_hosts
 
-ENTRYPOINT ["/bin/bash"]
-CMD ["-c"]
+CMD ["/bin/bash"]
