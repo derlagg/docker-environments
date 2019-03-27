@@ -4,7 +4,9 @@ RUN node -v
 RUN npm -v
 RUN yarn -v
 
-RUN yum install -y openssh-server
+RUN apk update
+
+RUN apk add openssh
 
 RUN ls ~
 
