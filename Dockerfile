@@ -1,4 +1,4 @@
-FROM node:lts-latest
+FROM node:lts-alpine
 
 RUN node -v
 RUN npm -v
