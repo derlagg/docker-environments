@@ -4,7 +4,7 @@ RUN node -v
 RUN npm -v
 RUN yarn -v
 
-RUN apt-get install -y openssh-server
+RUN yum install -y openssh-server
 
 RUN ls ~
 
